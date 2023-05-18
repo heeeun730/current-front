@@ -13,9 +13,8 @@ function App() {
         <div className="track">
           <div className="content">
             we are create for your the
-            current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comming
-            Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we are create for your the
-            current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comming Soon
+            current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we are create for your
+            the current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
         </div>
       </div>
