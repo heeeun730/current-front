@@ -1,15 +1,24 @@
 import logo from './current.png';
 import './App.css';
+import 'animate.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>Comming Soon</h2>
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className="animate__animated animate__pulse" alt="logo" />
       <ul>
-        <li>010-9392-5859</li>
         <li>thecurrentkr@gmail.com</li>
       </ul>
+      <div className="animated-title">
+        <div className="track">
+          <div className="content">
+            we are create for your the
+            current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comming
+            Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we are create for your the
+            current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comming Soon
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
