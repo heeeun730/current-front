@@ -9,10 +9,8 @@
     overflow-y: hidden;
     text-transform: uppercase;
     z-index: 2;
-    top: 20px;
-    transform: rotate(45deg);
+    top: 0;
     background: #ec6519;
-    margin-right: -100px;
   }
   .animated-title .track {
     position: absolute;
@@ -38,7 +36,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   min-width: 375px;
-  max-width: 1275px;
   padding: 30px;
   word-break: break-all;
   -webkit-text-size-adjust: none;
@@ -61,14 +58,12 @@ header {
   background-color: #000;
   img {
     width: 400px;
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
   }
 }
 .container {
   position: relative;
   width: 100%;
-  /* min-width: 375px; */
-  max-width: 1275px;
   padding: 0 40px 40px 40px;
   box-sizing: border-box;
 }
