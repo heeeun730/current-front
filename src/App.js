@@ -131,9 +131,6 @@ function App() {
               data-aos-once="true"
             >
               <p>
-                세상의 모든 결과는 고민이 아닌 행동이 만들어냅니다.
-                <br />
-                처음 보는 회사인데 괜찮을까? 비용과 일정은 가능할까? <br />
                 막연한 고민보다 한 번의 연락이 기대 이상의 <br />
                 결과를 만들 수 있습니다.
               </p>
@@ -268,10 +265,7 @@ function App() {
               data-aos-duration="1300"
               data-aos-once="true"
             >
-              <p className="mo_txt">
-                세상의 모든 결과는 고민이 아닌 행동이 만들어냅니다.
-                <br />
-                처음 보는 회사인데 괜찮을까? 비용과 일정은 가능할까? <br />
+              <p className="">
                 막연한 고민보다 한 번의 연락이 기대 이상의 <br />
                 결과를 만들 수 있습니다.
               </p>
@@ -282,7 +276,7 @@ function App() {
               data-aos-duration="1300"
               data-aos-once="true"
             >
-              <p className="mo_txt">thecurrentkr@gmail.com</p>
+              <p className="">thecurrentkr@gmail.com</p>
             </section>
           </div>
         </div>
