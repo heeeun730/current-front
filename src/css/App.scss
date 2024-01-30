@@ -329,3 +329,22 @@ footer .sns ul li.tel a {
 .wireframe {
   color: #333;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
