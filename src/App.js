@@ -2,6 +2,7 @@ import * as React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main';
 import Wireframe from './Wireframe';
+import Subpage from './Subpage';
 
 import './css/App.scss';
 import './css/font.css';
@@ -18,6 +19,10 @@ const App = (props) => {
     {
       path: '/Wireframe',
       element: <Wireframe />,
+    },
+    {
+      path: '/Subpage',
+      element: <Subpage />,
     },
   ]);
   return <RouterProvider router={router} />;

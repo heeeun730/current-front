@@ -49,7 +49,7 @@ const Main = (props) => {
             <p>
               We are create <br />
               for your the current
-              <br /> <br />Ⓒ 2023 The Current Lab
+              <br /> <br />Ⓒ 2024 The Current Lab
             </p>
           </div>
           <div className="content">
@@ -184,7 +184,7 @@ const Main = (props) => {
             <p>
               We are create <br />
               for your the current
-              <br /> <br />Ⓒ 2023 The Current Lab
+              <br /> <br />Ⓒ 2024 The Current Lab
             </p>
           </div>
           <div className="content">

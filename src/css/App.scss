@@ -1,6 +1,10 @@
 .main {
   position: relative;
   background: #000;
+  color: #fff;
+  header {
+    background-color: #000;
+  }
   .animated-title {
     font-size: 30px;
     font-weight: bold;
@@ -52,7 +56,6 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #000;
   img {
     width: 400px;
     padding: 50px 30px 30px 30px;
