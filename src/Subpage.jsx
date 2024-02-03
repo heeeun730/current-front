@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Ci from './img/ci.png';
 import PcRoom from './img/pc-room.png';
 import Banner from './img/slide.png';
+import Thumb001 from './img/thumb001.jpeg';
+import Thumb002 from './img/thumb002.png';
 
 const menuNames = [
   { id: 0, name: '새소식' },
@@ -38,8 +40,37 @@ export default function Subpage() {
         <img src={Banner} alt="slide" className="object-cover h-[400px]" />
       </div>
       <div className="w-full h-[56px] bg-[#101828]"></div>
-      <main className="max-w-[1280px] bg-[#cccccc]">
-        <div></div>
+      <main className="min-w-[1280px]">
+        <div className="flex">
+          <div className="w-[280px]">
+            <Link to="/">
+              <img
+                src={Thumb001}
+                alt="[발표] I HATE X-MAS 댓글 이벤트 당첨자 안내"
+                className="object-cover w-full h-[158px]"
+              />
+              <div className="border-solid border border-[#eaecf0] p-[16px] min-h-[76px]">
+                <h5 className="text-[14px ]text-[#344054] font-[500] leading-[21px]">
+                  [발표] I HATE X-MAS 댓글 이벤트 당첨자 안내
+                </h5>
+              </div>
+            </Link>
+          </div>
+          <div className="w-[280px]">
+            <Link to="/">
+              <img
+                src={Thumb002}
+                alt="[웹툰] 데저트 킹덤 1화 바로가기"
+                className="object-cover w-full h-[158px]"
+              />
+              <div className="border-solid border border-[#eaecf0] p-[16px] min-h-[76px]">
+                <h5 className="text-[14px ]text-[#344054] font-[500] leading-[21px]">
+                  [웹툰] 데저트 킹덤 1화 바로가기
+                </h5>
+              </div>
+            </Link>
+          </div>
+        </div>
       </main>
     </div>
   );

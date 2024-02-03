@@ -2,7 +2,7 @@
   position: relative;
   background: #000;
   color: #fff;
-  header {
+  .header-wrap {
     background-color: #000;
   }
   .animated-title {
@@ -51,7 +51,7 @@ code {
 }
 
 /* PC */
-header {
+.header-wrap {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -181,7 +181,7 @@ footer .sns ul li.tel a {
 
 /* 태블릿 */
 @media screen and (max-width: 1000px) {
-  header {
+  .header-wrap {
     .current-ci {
       width: 100%;
     }
@@ -264,7 +264,7 @@ footer .sns ul li.tel a {
 }
 /* 모바일 */
 @media screen and (max-width: 600px) {
-  header {
+  .header-wrap {
     .current-ci {
       width: 100%;
     }
@@ -312,7 +312,7 @@ footer .sns ul li.tel a {
   }
 }
 @media screen and (max-width: 400px) {
-  header {
+  .header-wrap {
     .current-ci {
       width: 100%;
     }

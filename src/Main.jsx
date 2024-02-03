@@ -37,7 +37,7 @@ const Main = (props) => {
             </div>
           </div>
         </div>
-        <header>
+        <header className="header-wrap">
           <img
             src={CurrentLogo}
             className="current-ci animate__animated animate__pulse"
