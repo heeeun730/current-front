@@ -1,24 +1,35 @@
 import React from 'react';
-import './css/subpage.scss';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Subpage() {
   return (
-    <div className="sub-page flex">
-      <header>
-        <div className="gnb">
-          <a href="/" className="gnb-ci">
-            <span class="blind">테일즈런너 홈 바로가기</span>
-          </a>
-          <nav>
-            <ul>
-              <li>새소식</li>
-              <li>게임소개</li>
-              <li>커뮤니티</li>
-              <li>랭킹</li>
-              <li>고객지원</li>
-            </ul>
-          </nav>
-        </div>
+    <div className="max-w-[1440px] m-auto">
+      <header className="w-full flex justify-between items-center h-[80px]">
+        <Link to="/">
+          <img src="./img/ci.png" alt="테일즈런너 홈 바로가기" />
+        </Link>
+        <nav className="w-[660px]">
+          <ul className="flex justify-around h-[40px] items-center text-[16px]">
+            <li>
+              <NavLink to="/">새소식</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">게임소개</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">커뮤니티</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">랭킹</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">고객지원</NavLink>
+            </li>
+          </ul>
+        </nav>
+        <Link to="/">
+          <img src="./img/pc-room.png" alt="PC방 바로가기" />
+        </Link>
       </header>
       <main>
         <div></div>
