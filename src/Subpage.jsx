@@ -22,8 +22,8 @@ const listItems = menuNames.map((menu) => (
 
 export default function Subpage() {
   return (
-    <div className="m-auto">
-      <header className="max-w-[1440px] w-[1280px] m-auto flex justify-between items-center h-[80px]">
+    <div className="flex flex-col items-center">
+      <header className="max-w-[1440px] w-[1280px] flex justify-between items-center h-[80px]">
         <Link to="/">
           <img src={Ci} alt="테일즈런너 홈 바로가기" className="h-[40px]" />
         </Link>
@@ -37,8 +37,8 @@ export default function Subpage() {
       <div className="h-[400px] bg-[#4672e4]">
         <img src={Banner} alt="slide" className="object-cover h-[400px]" />
       </div>
-      <div className="h-[56px] bg-[#101828]"></div>
-      <main className="max-w-[1440px] bg-[#cccccc]">
+      <div className="w-full h-[56px] bg-[#101828]"></div>
+      <main className="max-w-[1280px] bg-[#cccccc]">
         <div></div>
       </main>
     </div>
