@@ -19,9 +19,7 @@ export default function Subpage() {
           <img src={Ci} alt="테일즈런너 홈 바로가기" className="h-[40px]" />
         </Link>
         <nav>
-          <ul className="flex justify-around h-[40px] items-center">
-            {listItems}
-          </ul>
+          <ul className="flex h-[40px] items-center">{listItems}</ul>
         </nav>
         <Link to="/">
           <img src={PcRoom} alt="PC방 바로가기" className="h-[30px]" />
