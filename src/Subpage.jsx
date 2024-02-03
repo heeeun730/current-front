@@ -31,6 +31,9 @@ export default function Subpage() {
           <img src="./img/pc-room.png" alt="PC방 바로가기" />
         </Link>
       </header>
+      <div className="h-[400px] bg-[#4672e4]">
+        <img src="./img/slide.png" alt="slide" />
+      </div>
       <main>
         <div></div>
       </main>
