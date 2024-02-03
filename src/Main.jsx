@@ -40,7 +40,7 @@ const Main = (props) => {
         <header>
           <img
             src={CurrentLogo}
-            className="animate__animated animate__pulse"
+            className="current-ci animate__animated animate__pulse"
             alt="the current"
           />
         </header>

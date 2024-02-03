@@ -56,7 +56,7 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  img {
+  .current-ci {
     width: 400px;
     padding: 50px 30px 30px 30px;
   }
@@ -182,7 +182,7 @@ footer .sns ul li.tel a {
 /* 태블릿 */
 @media screen and (max-width: 1000px) {
   header {
-    img {
+    .current-ci {
       width: 100%;
     }
   }
@@ -265,7 +265,7 @@ footer .sns ul li.tel a {
 /* 모바일 */
 @media screen and (max-width: 600px) {
   header {
-    img {
+    .current-ci {
       width: 100%;
     }
   }
@@ -313,7 +313,7 @@ footer .sns ul li.tel a {
 }
 @media screen and (max-width: 400px) {
   header {
-    img {
+    .current-ci {
       width: 100%;
     }
   }
