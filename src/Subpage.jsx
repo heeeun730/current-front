@@ -4,10 +4,19 @@ import Ci from './img/ci.png';
 import PcRoom from './img/pc-room.png';
 import Banner from './img/slide.png';
 
-const menuNames = ['새소식', '게임소개', '커뮤니티', '랭킹', '고객지원'];
-const listItems = menuNames.map((name) => (
-  <li className="w-[132px] text-center text-[16px] font-[600] leading-[40px]">
-    <NavLink to="/">{name}</NavLink>
+const menuNames = [
+  { id: 0, name: '새소식' },
+  { id: 1, name: '게임소개' },
+  { id: 2, name: '커뮤니티' },
+  { id: 3, name: '랭킹' },
+  { id: 4, name: '고객지원' },
+];
+const listItems = menuNames.map((menu) => (
+  <li
+    key={menu.id}
+    className="w-[132px] text-center text-[16px] font-[600] leading-[40px]"
+  >
+    <NavLink to="/">{menu.name}</NavLink>
   </li>
 ));
 
@@ -29,7 +38,7 @@ export default function Subpage() {
         <img src={Banner} alt="slide" className="object-cover h-[400px]" />
       </div>
       <div className="h-[56px] bg-[#101828]"></div>
-      <main className="max-w-[1440px]">
+      <main className="max-w-[1440px] bg-[#cccccc]">
         <div></div>
       </main>
     </div>
