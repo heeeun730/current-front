@@ -7,13 +7,31 @@ import Thumb001 from './img/thumb001.jpeg';
 import Thumb002 from './img/thumb002.png';
 import Thumb003 from './img/thumb003.jpeg';
 import Thumb004 from './img/thumb004.png';
+import LoginBg from './img/login-bg.png';
+import NoticeBanner from './img/notice-banner.png';
+import IcoAdd from './img/icon/ico-add-24-line-b.svg';
+
+const noticeInfo = [
+  { id: 1, category: '[안내]', name: '불건전 커뮤니티 이용자 단속 현황 안내' },
+  { id: 2, category: '[안내]', name: '불건전 커뮤니티 이용자 단속 현황 안내' },
+];
+
+const noticeItems = noticeInfo.map((notice) => (
+  <li key={notice.id} className="text-[16px] font-[400] leading-[19px]">
+    <NavLink to="/">
+      <span>{notice.category}</span>
+      {notice.name}
+      <span className="bg-[red]">NEW</span>
+    </NavLink>
+  </li>
+));
 
 const menuNames = [
-  { id: 0, name: '새소식' },
-  { id: 1, name: '게임소개' },
-  { id: 2, name: '커뮤니티' },
-  { id: 3, name: '랭킹' },
-  { id: 4, name: '고객지원' },
+  { id: 1, name: '새소식' },
+  { id: 2, name: '게임소개' },
+  { id: 3, name: '커뮤니티' },
+  { id: 4, name: '랭킹' },
+  { id: 5, name: '고객지원' },
 ];
 const listItems = menuNames.map((menu) => (
   <li
@@ -83,7 +101,28 @@ export default function Subpage() {
         <img src={Banner} alt="slide" className="object-cover h-[400px]" />
       </div>
       <div className="w-full h-[56px] bg-[#101828]"></div>
-      <main className="min-w-[1280px]">
+      <main className="min-w-[1280px] py-[48px]">
+        <div className="flex  gap-x-[32px]">
+          <div className="w-[280px] h-[240px] flex flex-col">
+            <div className="flex justify-between">
+              <h3 className="text-[21px] text-[#344054] font-[600] leading-[25px]">
+                공지사항
+              </h3>
+              <Link to="/">
+                <img src={IcoAdd} alt="더보기" />
+              </Link>
+            </div>
+            <div>
+              <ul>{noticeItems}</ul>
+            </div>
+          </div>
+          <div>
+            <img src={NoticeBanner} alt="" />
+          </div>
+          <div>
+            <img src={LoginBg} alt="" />
+          </div>
+        </div>
         <div className="flex flex-col gap-y-[16px]">
           <h3 className="text-[18px] text-[#344054] font-[500] leading-[27px]">
             삐에로 소식
