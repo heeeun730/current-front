@@ -148,14 +148,14 @@ export default function Subpage() {
             <div className="flex gap-x-[4px] h-[52px] text-[16px] font-[600] leading-[24px] text-[#7A5AF8]">
               <Link
                 to="/"
-                className="flex justify-center gap-x-[8px] items-center grow bg-[#EBE9FE]"
+                className="flex justify-center gap-x-[4px] items-center basis-1/2 bg-[#EBE9FE]"
               >
                 <img src={Guide} alt="" />
                 테런 가이드
               </Link>
               <Link
                 to="/"
-                className="flex justify-center gap-x-[8px] items-center grow bg-[#E3FBCC]"
+                className="flex justify-center gap-x-[4px] items-center basis-1/2 bg-[#E3FBCC]"
               >
                 <img src={Update} alt="" />
                 업데이트 소식
