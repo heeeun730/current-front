@@ -54,7 +54,10 @@ const thumbsNews = thumbsNewsInfo.map((news) => (
         className="object-cover w-full h-[158px]"
       />
       <div className="border-solid border border-[#eaecf0] p-[16px] min-h-[76px]">
-        <h5 className="text-[14px] text-[#344054] font-[500] leading-[21px] text-ellipsis overflow-hidden line-clamp-2">
+        <h5
+          title={news.title}
+          className="text-[14px] text-[#344054] font-[500] leading-[21px] text-ellipsis overflow-hidden line-clamp-2"
+        >
           {news.title}
         </h5>
       </div>
