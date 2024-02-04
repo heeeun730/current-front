@@ -47,7 +47,7 @@ const noticeItems = noticeInfo.map((notice) => (
           {notice.name}
         </span>
         {notice.new ? (
-          <span className="bg-[red] px-[4px] py-[2px] bg-[#E9473F] text-[#ffffff] text-[10px] leading-[12px] rounded-[4px]">
+          <span className="bg-[red] px-[4px] bg-[#E9473F] text-[#ffffff] text-[10px] rounded-[4px]">
             NEW
           </span>
         ) : null}
