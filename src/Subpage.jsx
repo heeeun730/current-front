@@ -10,18 +10,48 @@ import Thumb004 from './img/thumb004.png';
 import LoginBg from './img/login-bg.png';
 import NoticeBanner from './img/notice-banner.png';
 import IcoAdd from './img/icon/ico-add-24-line-b.svg';
+import Update from './img/update.png';
+import Guide from './img/guide.png';
 
 const noticeInfo = [
-  { id: 1, category: '[안내]', name: '불건전 커뮤니티 이용자 단속 현황 안내' },
-  { id: 2, category: '[안내]', name: '불건전 커뮤니티 이용자 단속 현황 안내' },
+  {
+    id: 1,
+    category: '[안내]',
+    name: '불건전 커뮤니티 이용자 단속 현황 안내',
+    new: true,
+  },
+  {
+    id: 2,
+    category: '[안내]',
+    name: '불건전 커뮤니티 이용자 단속 현황 안내',
+    new: true,
+  },
+  {
+    id: 3,
+    category: '[안내]',
+    name: '불건전 커뮤니티 이용자 단속 현황 안내',
+  },
+  {
+    id: 4,
+    category: '[안내]',
+    name: '불건전 커뮤니티 이용자 단속 현황 안내',
+  },
 ];
 
 const noticeItems = noticeInfo.map((notice) => (
   <li key={notice.id} className="text-[16px] font-[400] leading-[19px]">
     <NavLink to="/">
-      <span>{notice.category}</span>
-      {notice.name}
-      <span className="bg-[red]">NEW</span>
+      <span className="flex align-center gap-x-[4px]">
+        {notice.category}
+        <span className="text-ellipsis overflow-hidden whitespace-nowrap">
+          {notice.name}
+        </span>
+        {notice.new ? (
+          <span className="bg-[red] px-[4px] py-[2px] bg-[#E9473F] text-[#ffffff] text-[10px] leading-[12px] rounded-[4px]">
+            NEW
+          </span>
+        ) : null}
+      </span>
     </NavLink>
   </li>
 ));
@@ -101,9 +131,9 @@ export default function Subpage() {
         <img src={Banner} alt="slide" className="object-cover h-[400px]" />
       </div>
       <div className="w-full h-[56px] bg-[#101828]"></div>
-      <main className="min-w-[1280px] py-[48px]">
+      <main className="min-w-[1280px] py-[48px] flex flex-col gap-y-[64px]">
         <div className="flex  gap-x-[32px]">
-          <div className="w-[280px] h-[240px] flex flex-col">
+          <div className="w-[280px] h-[240px] flex flex-col justify-between">
             <div className="flex justify-between">
               <h3 className="text-[21px] text-[#344054] font-[600] leading-[25px]">
                 공지사항
@@ -113,7 +143,23 @@ export default function Subpage() {
               </Link>
             </div>
             <div>
-              <ul>{noticeItems}</ul>
+              <ul className="flex flex-col gap-y-[16px]">{noticeItems}</ul>
+            </div>
+            <div className="flex gap-x-[4px] h-[52px] text-[16px] font-[600] leading-[24px] text-[#7A5AF8]">
+              <Link
+                to="/"
+                className="flex justify-center gap-x-[8px] items-center grow bg-[#EBE9FE]"
+              >
+                <img src={Guide} alt="" />
+                테런 가이드
+              </Link>
+              <Link
+                to="/"
+                className="flex justify-center gap-x-[8px] items-center grow bg-[#E3FBCC]"
+              >
+                <img src={Update} alt="" />
+                업데이트 소식
+              </Link>
             </div>
           </div>
           <div>
