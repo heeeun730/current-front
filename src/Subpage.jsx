@@ -102,12 +102,12 @@ const thumbsNews = thumbsNewsInfo.map((news) => (
         className="object-cover w-full h-[158px]"
       />
       <div className="border-solid border border-[#eaecf0] p-[16px] min-h-[76px]">
-        <h5
+        <p
           title={news.title}
           className="text-[14px] text-[#344054] font-[500] leading-[21px] text-ellipsis overflow-hidden line-clamp-2"
         >
           {news.title}
-        </h5>
+        </p>
       </div>
     </div>
   </Link>
@@ -166,7 +166,39 @@ export default function Subpage() {
             <img src={NoticeBanner} alt="" />
           </div>
           <div>
-            <img src={LoginBg} alt="" />
+            <div
+              className="bg-no-repeat w-[280px] h-[128px] text-[#ffffff] font-[600] tracking-[-1px] flex flex-col items-center justify-center gap-y-[12px]"
+              style={{ backgroundImage: `url(${LoginBg})` }}
+            >
+              <Link to="/" className="text-[36px]">
+                게임시작
+              </Link>
+              <ul className="w-[146px] h-[18px] flex items-center">
+                <li className="border-r border-solid border-[#ffffff] basis-1/2">
+                  <Link to="/">다운로드</Link>
+                </li>
+                <li className="basis-1/2 text-right">
+                  <Link to="/">문제해결</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="px-[13px] h-[112px] flex flex-col justify-center items-center gap-y-[12px] border border-solid border-[#EAECF0]">
+              <Link
+                to="/"
+                className="block w-[173px] h-[44px] bg-[#D84425] rounded-[8px] text-[#ffffff] text-[16px] font-[600] leading-[44px] text-center"
+              >
+                라온 ID 로그인
+              </Link>
+              <ul className="w-[240px] flex text-[12px] text-[#98A2B3]">
+                <li className="basis-1/2 font-[600]">
+                  <Link to="/">회원가입</Link>
+                </li>
+                <li className="basis-1/2 flex gap-x-[16px]">
+                  <Link to="/">ID 찾기</Link>
+                  <Link to="/">비밀번호 찾기</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="flex flex-col gap-y-[16px]">
