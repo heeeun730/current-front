@@ -11,11 +11,9 @@ const Main = (props) => {
   })
   return (
     <>
-      <div className='bg-black text-[#f5f2ef]'>
+      <div className='bg-black text-[#f5f2ef] selection:bg-[#000AFF]'>
         <header className='fixed w-full flex justify-between px-6 py-2 text-base'>
-          <NavLink className='font-black bg-gradient-to-r from-[#f5f2ef] to-[#000AFF] text-transparent bg-clip-text'>
-            ATREE CLOUD
-          </NavLink>
+          <NavLink className='font-black'>ATREE</NavLink>
           <nav className='uppercase flex gap-2 leading-7'>
             <NavLink className='px-2 hover:bg-[#000AFF] hover:rounded-md hover:text-[#f5f2ef]'>
               About
@@ -32,8 +30,8 @@ const Main = (props) => {
           data-aos='fade-right'
           className='fixed flex overflow-hidden top-[100px]'
         >
-          <div className='animate-marquee whitespace-nowrap text-[150px] font-[100] -tracking-wide leading-none'>
-            Atree Cloud Company
+          <div className='animate-marquee whitespace-nowrap text-[150px] font-[100] -tracking-wide leading-none p-10'>
+            Atree Company
             <span className='text-[#000AFF]'>*</span>
           </div>
         </div>
@@ -72,7 +70,9 @@ const Main = (props) => {
             <div>@2022</div>
             <div className='w-full h-full bg-[url(./work-thumb-03.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
             <div className='uppercase self-end'>
-              SIHEUNG DREAM HYANGYOU colorectal breast surgery
+              SIHEUNG DREAM HYANGYOU
+              <br />
+              colorectal breast surgery
             </div>
           </div>
         </div>
