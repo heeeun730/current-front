@@ -44,7 +44,7 @@ const Main = (props) => {
             <span className='text-[#000AFF]'>*</span>
           </div>
         </div>
-        <div className='grid grid-cols-4 gap-y-[200px] px-10 py-[300px]'>
+        <div className='grid grid-cols-4 gap-y-[200px] px-10 py-[400px]'>
           <div
             data-aos='fade-up'
             className='col-start-2 col-span-2 self-center h-[550px] flex flex-col gap-1 text-sm'
