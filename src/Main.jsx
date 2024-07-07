@@ -12,24 +12,38 @@ const Main = (props) => {
   return (
     <>
       <div className='bg-black text-[#f5f2ef]'>
-        <header className='flex justify-between px-6 py-2'>
-          <NavLink className='text-lg font-black'>TCL</NavLink>
+        <header className='fixed w-full flex justify-between px-6 py-2 text-base'>
+          <NavLink className='font-black bg-gradient-to-r from-[#f5f2ef] to-[#000AFF] text-transparent bg-clip-text'>
+            ATREE CLOUD
+          </NavLink>
           <nav className='uppercase flex gap-2 leading-7'>
-            <NavLink className='px-2 hover:bg-[#f5f2ef] hover:rounded-md hover:text-black'>
+            <NavLink className='px-2 hover:bg-[#000AFF] hover:rounded-md hover:text-[#f5f2ef]'>
               About
             </NavLink>
-            <NavLink className='px-2 hover:bg-[#f5f2ef] hover:rounded-md hover:text-black'>
+            <NavLink className='px-2 hover:bg-[#000AFF] hover:rounded-md hover:text-[#f5f2ef]'>
               Work
             </NavLink>
-            <NavLink className='px-2 hover:bg-[#f5f2ef] hover:rounded-md hover:text-black'>
+            <NavLink className='px-2 hover:bg-[#000AFF] hover:rounded-md hover:text-[#f5f2ef]'>
               Contact
             </NavLink>
           </nav>
         </header>
-        <div data-aos='fade-left' className='fixed flex overflow-hidden'>
-          <div className='uppercase animate-marquee whitespace-nowrap text-[400px] font-[100] -tracking-wide leading-none'>
-            we are T C L<span className='text-[#ec6519]'>*</span>
-            The Current LAB
+        <div
+          data-aos='fade-right'
+          className='fixed flex overflow-hidden top-[100px]'
+        >
+          <div className='animate-marquee whitespace-nowrap text-[150px] font-[100] -tracking-wide leading-none'>
+            Atree Cloud Company
+            <span className='text-[#000AFF]'>*</span>
+          </div>
+        </div>
+        <div
+          data-aos='fade-right'
+          className='fixed top-[400px] flex overflow-hidden'
+        >
+          <div className='animate-marquee2 whitespace-nowrap text-[500px] font-[100] -tracking-wide leading-none'>
+            WORK
+            <span className='text-[#000AFF]'>*</span>
           </div>
         </div>
         <div className='grid grid-cols-4 gap-y-[200px] px-10 py-[300px]'>
@@ -45,7 +59,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='col-span-2 self-end h-[300px] flex flex-col gap-1 text-sm'
+            className='col-start-3 col-span-1 self-end h-[300px] flex flex-col gap-1 text-sm'
           >
             <div>@2024</div>
             <div className='w-full h-full bg-[url(./work-thumb-02.png)] bg-center flex items-center justify-center'></div>
@@ -53,7 +67,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='col-start-2 col-span-2 self-center h-[550px] flex flex-col gap-1 text-sm'
+            className='col-start-2 col-span-1 self-center h-[400px] flex flex-col gap-1 text-sm'
           >
             <div>@2022</div>
             <div className='w-full h-full bg-[url(./work-thumb-03.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
