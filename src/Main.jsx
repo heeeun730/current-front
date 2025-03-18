@@ -26,10 +26,7 @@ const Main = (props) => {
             </NavLink> */}
           </nav>
         </header>
-        <div
-          data-aos='fade-right'
-          className='fixed top-[400px] flex overflow-hidden'
-        >
+        <div data-aos='fade-right' className='fixed top-[400px] flex'>
           <div className='animate-marquee2 whitespace-nowrap text-[500px] font-[100] -tracking-wide leading-none'>
             WORK
           </div>
@@ -40,13 +37,13 @@ const Main = (props) => {
               the current
               <span className='text-[#000AFF]'>*</span>
             </div>
-            <span className='rounded-lg bg-[#000AFF] text-white px-2 py-1 text-lg'>
+            <span className='rounded-lg bg-[#000AFF] text-white px-2 py-1 text-2xl font-bold'>
               thecurrentkr@gmail.com
             </span>
           </div>
           <div
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[550px] flex flex-col gap-1 text-sm'
+            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2025</div>
             <div className='w-full h-full bg-[url(./work-thumb-04.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
@@ -56,7 +53,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-sm'
+            className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2025</div>
             <div className='w-full h-full bg-[url(./work-thumb-05.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
@@ -64,7 +61,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-sm'
+            className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2024</div>
             <div className='w-full h-full bg-[url(./work-thumb-01.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
@@ -74,7 +71,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[300px] flex flex-col gap-1 text-sm'
+            className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[300px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2024</div>
             <div className='w-full h-full bg-[url(./work-thumb-02.png)] bg-center flex items-center justify-center'></div>
@@ -82,7 +79,7 @@ const Main = (props) => {
           </div>
           <div
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[400px] flex flex-col gap-1 text-sm'
+            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[400px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2022</div>
             <div className='w-full h-full bg-[url(./work-thumb-03.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
