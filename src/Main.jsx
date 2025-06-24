@@ -37,7 +37,7 @@ const Main = (props) => {
               the current
               <span className='text-[#000AFF]'>*</span>
             </div>
-            <span className='rounded-lg bg-[#000AFF] text-white px-2 py-1 text-2xl font-bold'>
+            <span className='rounded-lg bg-[#000AFF] text-white px-2 py-1 text-xl font-bold'>
               thecurrentkr@gmail.com
             </span>
           </div>
@@ -55,6 +55,7 @@ const Main = (props) => {
           </div>
           <NavLink
             to='https://gajungsil.com/'
+            target='_blank'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
@@ -66,6 +67,7 @@ const Main = (props) => {
           </NavLink>
           <NavLink
             to='https://poplus.io'
+            target='_blank'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
@@ -75,6 +77,7 @@ const Main = (props) => {
           </NavLink>
           <NavLink
             to='https://tr.rhaon.co.kr'
+            target='_blank'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
@@ -90,11 +93,12 @@ const Main = (props) => {
             className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2024</div>
-            <div className='w-full h-full bg-[url(./work-thumb-02.png)] bg-center flex items-center justify-center'></div>
+            <div className='w-full h-full bg-[url(./work-thumb-02.png)] bg-center flex items-center justify-center bg-no-repeat'></div>
             <div className='uppercase self-end'>SPlay portal website</div>
           </NavLink>
           <NavLink
             to='https://www.dreamhangyou.com'
+            target='_blank'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
