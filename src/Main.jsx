@@ -12,7 +12,7 @@ const Main = (props) => {
   return (
     <>
       <div className='bg-black text-[#f5f2ef] selection:bg-[#000AFF]'>
-        <header className='w-full flex justify-between px-6 py-6 text-3xl sticky top-0 bg-black z-10'>
+        <header className='w-full flex justify-between px-6 py-6 text-2xl sticky top-0 bg-black z-10'>
           <NavLink className='font-black'>TC</NavLink>
           <nav className='uppercase flex gap-2 leading-7'>
             {/* <NavLink className='px-2 hover:bg-[#000AFF] hover:rounded-md hover:text-[#f5f2ef]'>
@@ -46,20 +46,35 @@ const Main = (props) => {
             className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2025</div>
-            <div className='w-full h-full bg-[url(./work-thumb-04.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
+            <div className='w-full h-full bg-[url(./work-thumb-04.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat bg-black/50 bg-blend-overlay'>
+              <span className='text-xl'>Comming Soon</span>
+            </div>
             <div className='uppercase self-end'>
               HO internal medicine clinic website
             </div>
           </div>
-          <div
+          <NavLink
+            to='https://gajungsil.com/'
+            data-aos='fade-up'
+            className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
+          >
+            <div>@2025</div>
+            <div className='w-full h-full bg-[url(./work-thumb-06.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
+            <div className='uppercase self-end'>
+              Gajungsil Design Studio Website
+            </div>
+          </NavLink>
+          <NavLink
+            to='https://poplus.io'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2025</div>
             <div className='w-full h-full bg-[url(./work-thumb-05.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
-            <div className='uppercase self-end'>gemhubplay portal website</div>
-          </div>
-          <div
+            <div className='uppercase self-end'>Poplus portal website</div>
+          </NavLink>
+          <NavLink
+            to='https://tr.rhaon.co.kr'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1  self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
@@ -68,18 +83,20 @@ const Main = (props) => {
             <div className='uppercase self-end'>
               talesrunner official website
             </div>
-          </div>
-          <div
+          </NavLink>
+          <NavLink
+            to='https://splaytest.blomics.net'
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[300px] flex flex-col gap-1 text-2xl font-bold'
+            className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2024</div>
             <div className='w-full h-full bg-[url(./work-thumb-02.png)] bg-center flex items-center justify-center'></div>
-            <div className='uppercase self-end'>SAVVY portal website</div>
-          </div>
-          <div
+            <div className='uppercase self-end'>SPlay portal website</div>
+          </NavLink>
+          <NavLink
+            to='https://www.dreamhangyou.com'
             data-aos='fade-up'
-            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[400px] flex flex-col gap-1 text-2xl font-bold'
+            className='grid-cols-1 md:col-start-2 col-start-1 self-center h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
             <div>@2022</div>
             <div className='w-full h-full bg-[url(./work-thumb-03.png)] bg-cover bg-center flex items-center justify-center bg-no-repeat'></div>
@@ -88,7 +105,7 @@ const Main = (props) => {
               <br />
               colorectal breast surgery
             </div>
-          </div>
+          </NavLink>
         </div>
       </div>
     </>
