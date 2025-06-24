@@ -89,6 +89,7 @@ const Main = (props) => {
           </NavLink>
           <NavLink
             to='https://splaytest.blomics.net'
+            target='_blank'
             data-aos='fade-up'
             className='grid-cols-1 md:col-start-2 col-start-1 self-end h-[550px] flex flex-col gap-1 text-2xl font-bold'
           >
